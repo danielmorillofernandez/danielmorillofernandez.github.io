@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+</head>
+<body>
+    <form action="https://lm.ciclo.iesnervion.es/encuesta.php" method="post">
+        
+        <fieldset>
+            <legend>Datos Académicos</legend>
+                <label for="name">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="Ciclo Formativo">Ciclo Formativo:</label>
+                <select id="ciclo" name="ciclo" required>
+                    <option value="DAM">DAM</option>
+                    <option value="DAW">DAW</option>
+                    <option value="ASIR">ASIR</option>
+                </select><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias técnicas</legend>
+                <label for="lenguaje">Lenguaje de programación:</label><br>
+
+                <input type="radio" id="lenguaje" name="lenguaje" value="Python" required>
+                <label for="lenguaje">Python</label><br>
+
+                <input type="radio" id="lenguaje1" name="lenguaje" value="Java" required>
+                <label for="lenguaje2">Java</label><br>
+
+                <input type="radio" id="lenguaje2" name="lenguaje" value="JavaScript" required>
+                <label for="lenguaje3">JavaScript</label><br>
+
+                <input type="radio" id="lenguaje3" name="lenguaje" value="C#" required>                
+                <label for="lenguaje4">C#</label><br><br>
+
+                <label for="entornos">Entorno de trabajo habitual:</label><br>
+
+                <input type="checkbox" id="entorno1" name="entornos[0]" value="Linux">
+                <label for="entorno1">Linux</label><br>
+
+                <input type="checkbox" id="entorno2" name="entornos[1]" value="Windows">
+                <label for="entorno2">Windows</label><br>
+
+                <input type="checkbox" id="entorno3" name="entornos[2]" value="macOS">
+                <label for="entorno3">macOS</label><br>
+
+                <label for="comentarios">Comentario:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+        </fieldset>
+
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
