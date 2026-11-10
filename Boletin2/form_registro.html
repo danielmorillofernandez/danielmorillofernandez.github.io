@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="https://lm.ciclo.iesnervion.es/registro.php" method="post">
+        <label for="codigo">Código de alumno:</label>
+        <input type="text" pattern="[A-Z]{3}[0-9]{3}" id="codigo" name="codigo" required><br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="email" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="16" max="65" required><br><br>
+
+        <label for="tel">Teléfono:</label>
+        <input type="tel" pattern="[0-9]{9}" id="tel" name="telefono" required><br><br>
+
+        <label for="web">Sitio web / Portfolio:</label>
+        <input type="url" id="web" name="web" required><br><br>
+
+        <label for="ide">IDE Preferido:</label>
+        <input type="datalist" id="ide" name="ide" required><br><br>
+            <option value="IntelliJ IDEA">
+            <option value="Eclipse">
+            <option value="Visual Studio Code">
+            <option value="Android Studio">
+
+        <label for="políticas">Aceptas las políticas de privacidad:</label>
+        <input type="checkbox" id="políticas" name="politica" required><br><br>
+
+        <input type="submit" value="Registrarse">
+    </form>
+</html>
