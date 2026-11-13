@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción</title>
+</head>
+<body>
+    <h1>Formulario de inscripción</h1>
+    <form action="https://lm.ciclo.iesnervion.es/inscripcion.php" enctype="multipart/form-data" method="post">
+        <label for="nombre">Nombre del Equipo:</label>
+        <input type="text" autofocus id="nombre" name="equipo" required><br><br>
+
+        <label for="codigo">Código de Registro:</label>
+        <input type="text" readonly value="HACK-2026-SEV" id="codigo" name="codigo_registro" required><br><br>
+
+        <label for="fecha">Fecha de llegada:</label>
+        <input type="date" id="fecha" name="fecha" min="2026-12-01" max="2026-12-15" required><br><br>
+
+        <label for="hora">Hora de presentación:</label>
+        <input type="time" id="hora" name="hora" required><br><br>
+
+        <label for="color">Color del equipo:</label>
+        <input type="color" id="color" name="color_equipo" required><br><br>
+
+        <label for="nivel_java">Nivel de Java:</label>
+        <input type="range" id="nivel_java" name="nivel_java" min="0" max="100" step="5" required><br><br>
+
+        <label for="expediente">Subir expediente:</label>
+        <input type="file" id="expediente" name="expediente" accept=".pdf" required><br><br>
+
+        <input type="submit" value="Inscribirse">
+    </form>
+</body>
+</html>

@@ -25,14 +25,16 @@
         <input type="url" id="web" name="web" required><br><br>
 
         <label for="ide">IDE Preferido:</label>
-        <input type="datalist" id="ide" name="ide" required><br><br>
-            <option value="IntelliJ IDEA">
-            <option value="Eclipse">
-            <option value="Visual Studio Code">
-            <option value="Android Studio">
+        <input type="text" id="ide" name="ide" list="ides" required><br><br>
+            <datalist id="ides">
+                <option value="IntelliJ IDEA">
+                <option value="Eclipse">
+                <option value="Visual Studio Code">
+                <option value="Android Studio">
+            </datalist>
 
-        <label for="políticas">Aceptas las políticas de privacidad:</label>
-        <input type="checkbox" id="políticas" name="politica" required><br><br>
+        <label for="politica">Aceptas las políticas de privacidad:</label>
+        <input type="checkbox" id="politica" name="politica"><br><br>
 
         <input type="submit" value="Registrarse">
     </form>
